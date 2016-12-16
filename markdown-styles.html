@@ -11,6 +11,8 @@ WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
 License for the specific language governing permissions and limitations under
 the License.
 -->
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-styles/typography.html">
 <!--
 ## Styles for markdown preview
 It should be included where the `marked-element` is used.
@@ -25,6 +27,11 @@ It should be included where the `marked-element` is used.
 Note use of the `markdown-html` CSS rules. It is required by markdown element also all css rules
 defined here are scoped to a container with this class name.
 
+Custom property | Description | Default
+----------------|-------------|----------
+`--code-background-color` | Background color of the code block | `#f5f2f0`
+
+
 @group UI Elements
 @element markdown-styles
 -->
@@ -37,39 +44,7 @@ defined here are scoped to a container with this class name.
     .markdown-html h4,
     .markdown-html h5,
     .markdown-html h6 {
-      margin-top: 1em;
-      margin-bottom: 16px;
-      font-weight: bold;
-      line-height: 1.4
-    }
-
-    .markdown-html h1 .octicon-link,
-    .markdown-html h2 .octicon-link,
-    .markdown-html h3 .octicon-link,
-    .markdown-html h4 .octicon-link,
-    .markdown-html h5 .octicon-link,
-    .markdown-html h6 .octicon-link {
-      color: #000;
-      vertical-align: middle;
-      visibility: hidden
-    }
-
-    .markdown-html h1:hover .anchor,
-    .markdown-html h2:hover .anchor,
-    .markdown-html h3:hover .anchor,
-    .markdown-html h4:hover .anchor,
-    .markdown-html h5:hover .anchor,
-    .markdown-html h6:hover .anchor {
-      text-decoration: none
-    }
-
-    .markdown-html h1:hover .anchor .octicon-link,
-    .markdown-html h2:hover .anchor .octicon-link,
-    .markdown-html h3:hover .anchor .octicon-link,
-    .markdown-html h4:hover .anchor .octicon-link,
-    .markdown-html h5:hover .anchor .octicon-link,
-    .markdown-html h6:hover .anchor .octicon-link {
-      visibility: visible
+      @apply(--paper-font-title);
     }
 
     .markdown-html h1 tt,
@@ -88,35 +63,35 @@ defined here are scoped to a container with this class name.
     }
 
     .markdown-html h1 {
-      padding-bottom: 0.3em;
-      font-size: 2.25em;
-      line-height: 1.2;
-      border-bottom: 1px solid #eee
+      @apply(--paper-font-display1);
+      border-bottom: 1px solid #eee;
     }
 
     .markdown-html h2 {
-      padding-bottom: 0.3em;
-      font-size: 1.75em;
-      line-height: 1.225;
-      border-bottom: 1px solid #eee
+      @apply(--paper-font-title);
+      border-bottom: 1px solid #eee;
     }
 
     .markdown-html h3 {
+      @apply(--paper-font-subhead);
       font-size: 1.5em;
       line-height: 1.43
     }
 
     .markdown-html h4 {
+      @apply(--paper-font-subhead);
       font-size: 1.25em
     }
 
     .markdown-html h5 {
+      @apply(--paper-font-subhead);
       font-size: 1em
     }
 
     .markdown-html h6 {
+      @apply(--paper-font-subhead);
       font-size: 1em;
-      color: #777
+      color: #777;
     }
 
     .markdown-html p,
@@ -126,6 +101,7 @@ defined here are scoped to a container with this class name.
     .markdown-html dl,
     .markdown-html table,
     .markdown-html pre {
+      @apply(--paper-font-body1);
       margin-top: 0;
       margin-bottom: 16px
     }
@@ -193,11 +169,13 @@ defined here are scoped to a container with this class name.
     }
 
     .markdown-html table {
+      @apply(--paper-font-body1);
       display: block;
       width: 100%;
       overflow: auto;
       word-break: normal;
-      word-break: keep-all
+      word-break: keep-all;
+      border-collapse: collapse;
     }
 
     .markdown-html table th {
@@ -235,83 +213,17 @@ defined here are scoped to a container with this class name.
 
     .markdown-html code,
     .markdown-html tt {
+      @aplly(--paper-font-common-code);
       padding: 0;
       padding-top: 0.2em;
       padding-bottom: 0.2em;
       margin: 0;
-      font-size: 85%;
       background-color: rgba(0, 0, 0, 0.04);
-      border-radius: 3px
-    }
-
-    .markdown-html code:before,
-    .markdown-html code:after,
-    .markdown-html tt:before,
-    .markdown-html tt:after {
-      letter-spacing: -0.2em;
-      content: "\00a0"
-    }
-
-    .markdown-html code br,
-    .markdown-html tt br {
-      display: none
-    }
-
-    .markdown-html del code {
-      text-decoration: inherit
-    }
-
-    .markdown-html pre>code {
-      padding: 0;
-      margin: 0;
-      font-size: 100%;
-      word-break: normal;
-      white-space: pre;
-      background: transparent;
-      border: 0
-    }
-
-    .markdown-html .highlight {
-      margin-bottom: 16px
-    }
-
-    .markdown-html .highlight pre,
-    .markdown-html pre {
-      padding: 16px;
-      overflow: auto;
-      font-size: 85%;
-      line-height: 1.45;
-      background-color: #f7f7f7;
-      border-radius: 3px
-    }
-
-    .markdown-html .highlight pre {
-      margin-bottom: 0;
-      word-break: normal
+      border-radius: 2px
     }
 
     .markdown-html pre {
       word-wrap: normal
-    }
-
-    .markdown-html pre code,
-    .markdown-html pre tt {
-      display: inline;
-      max-width: initial;
-      padding: 0;
-      margin: 0;
-      overflow: initial;
-      line-height: inherit;
-      word-wrap: normal;
-      background-color: transparent;
-      border: 0
-    }
-
-    .markdown-html pre code:before,
-    .markdown-html pre code:after,
-    .markdown-html pre tt:before,
-    .markdown-html pre tt:after {
-      content: normal
     }
 
     /**
@@ -321,10 +233,10 @@ defined here are scoped to a container with this class name.
     */
     .markdown-html code,
     .markdown-html pre {
+      @apply(--paper-font-common-code);
       color: black;
       background: none;
       text-shadow: 0 1px white;
-      font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
       text-align: left;
       white-space: pre;
       word-spacing: normal;
@@ -374,7 +286,7 @@ defined here are scoped to a container with this class name.
 
     .markdown-html :not(pre) > code,
     .markdown-html pre {
-      background: #f5f2f0;
+      background: var(--code-background-color, #f5f2f0);
     }
 
     /* Inline code */
