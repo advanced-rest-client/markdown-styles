@@ -44,7 +44,7 @@ Custom property | Description | Default
     .markdown-html h4,
     .markdown-html h5,
     .markdown-html h6 {
-      @apply(--paper-font-title);
+      @apply(--arc-font-title);
     }
 
     .markdown-html h1 tt,
@@ -63,33 +63,33 @@ Custom property | Description | Default
     }
 
     .markdown-html h1 {
-      @apply(--paper-font-display1);
+      @apply(--arc-font-display1);
       border-bottom: 1px solid #eee;
     }
 
     .markdown-html h2 {
-      @apply(--paper-font-title);
+      @apply(--arc-font-title);
       border-bottom: 1px solid #eee;
     }
 
     .markdown-html h3 {
-      @apply(--paper-font-subhead);
+      @apply(--arc-font-subhead);
       font-size: 1.5em;
       line-height: 1.43
     }
 
     .markdown-html h4 {
-      @apply(--paper-font-subhead);
+      @apply(--arc-font-subhead);
       font-size: 1.25em
     }
 
     .markdown-html h5 {
-      @apply(--paper-font-subhead);
+      @apply(--arc-font-subhead);
       font-size: 1em
     }
 
     .markdown-html h6 {
-      @apply(--paper-font-subhead);
+      @apply(--arc-font-subhead);
       font-size: 1em;
       color: #777;
     }
@@ -101,7 +101,7 @@ Custom property | Description | Default
     .markdown-html dl,
     .markdown-html table,
     .markdown-html pre {
-      @apply(--paper-font-body1);
+      @apply(--arc-font-body1);
       margin-top: 0;
       margin-bottom: 16px
     }
@@ -169,7 +169,7 @@ Custom property | Description | Default
     }
 
     .markdown-html table {
-      @apply(--paper-font-body1);
+      @apply(--arc-font-body1);
       display: block;
       width: 100%;
       overflow: auto;
@@ -213,7 +213,7 @@ Custom property | Description | Default
 
     .markdown-html code,
     .markdown-html tt {
-      @aplly(--paper-font-common-code);
+      @aplly(--arc-font-common-code);
       padding: 0;
       padding-top: 0.2em;
       padding-bottom: 0.2em;
@@ -233,9 +233,9 @@ Custom property | Description | Default
     */
     .markdown-html code,
     .markdown-html pre {
-      @apply(--paper-font-common-code);
+      @apply(--arc-font-common-code);
       color: black;
-      background: none;
+      background: var(--code-background-color);
       text-shadow: 0 1px white;
       text-align: left;
       white-space: pre;
@@ -285,7 +285,8 @@ Custom property | Description | Default
     }
 
     .markdown-html :not(pre) > code,
-    .markdown-html pre {
+    .markdown-html pre,
+    pre.markdown-html {
       background: var(--code-background-color, #f5f2f0);
     }
 
@@ -304,7 +305,7 @@ Custom property | Description | Default
     }
 
     .markdown-html .token.punctuation {
-      color: #999;
+      color: var(--code-punctuation-value-color, #999);
     }
 
     .markdown-html .namespace {
@@ -318,7 +319,7 @@ Custom property | Description | Default
     .markdown-html .token.constant,
     .markdown-html .token.symbol,
     .markdown-html .token.deleted {
-      color: #905;
+      color: var(--code-type-number-value-color, #905);
     }
 
     .markdown-html .token.selector,
@@ -327,7 +328,7 @@ Custom property | Description | Default
     .markdown-html .token.char,
     .markdown-html .token.builtin,
     .markdown-html .token.inserted {
-      color: #690;
+      color: var(--code-type-text-value-color, #690);
     }
 
     .markdown-html .token.operator,
@@ -335,7 +336,7 @@ Custom property | Description | Default
     .markdown-html .token.url,
     .markdown-html .language-css .token.string,
     .markdown-html .style .token.string {
-      color: #a67f59;
+      color: var(--code-punctuation-value-color, #a67f59);
       background: hsla(0, 0%, 100%, .5);
     }
 
