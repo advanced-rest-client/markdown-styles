@@ -12,7 +12,6 @@ License for the specific language governing permissions and limitations under
 the License.
 -->
 <link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../paper-styles/typography.html">
 <!--
 ## Styles for markdown preview
 It should be included where the `marked-element` is used.
@@ -38,6 +37,10 @@ Custom property | Description | Default
 <dom-module id="markdown-styles">
   <template>
     <style>
+    .markdown-html {
+      @apply(--arc-font-code1);
+    }
+
     .markdown-html h1,
     .markdown-html h2,
     .markdown-html h3,
