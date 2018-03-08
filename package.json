@@ -1,9 +1,8 @@
 {
   "name": "@api-components/markdown-styles",
-  "description": "Styles definition for markdown preview.",
-  "version": "2.0.0",
-  "license": "Apache-2.0",
   "description": "Element that displays response documentation for RAML",
+  "version": "2.0.1",
+  "license": "Apache-2.0",
   "private": true,
   "author": "The Advanced REST client authors <arc@mulesoft.com>",
   "devDependencies": {
