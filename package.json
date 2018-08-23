@@ -1,17 +1,15 @@
 {
   "name": "@api-components/markdown-styles",
   "description": "Element that displays response documentation for RAML",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "license": "Apache-2.0",
   "private": true,
   "author": "The Advanced REST client authors <arc@mulesoft.com>",
   "devDependencies": {
-    "@polymer/gen-typescript-declarations": "^1.1.1",
-    "bower": "^1.8.0"
+    "@polymer/gen-typescript-declarations": "^1.1.1"
   },
   "scripts": {
-    "update-types": "bower install && gen-typescript-declarations --deleteExisting --outDir .",
-    "gen-tsd": "gen-typescript-declarations --deleteExisting --outDir ."
+    "update-types": "gen-typescript-declarations --deleteExisting --outDir ."
   },
   "repository": {
     "type": "git",

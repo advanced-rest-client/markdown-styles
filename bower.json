@@ -1,6 +1,7 @@
 {
   "name": "markdown-styles",
   "description": "Styles definition for markdown preview.",
+  "version": "2.0.3",
   "license": "Apache-2.0",
   "authors": [
     "The Advanced REST client authors <arc@mulesoft.com>"
@@ -18,13 +19,7 @@
     "url": "git@github.com:advanced-rest-client/markdown-styles.git"
   },
   "dependencies": {
-    "polymer": "Polymer/polymer#1.9 - 2"
-  },
-  "devDependencies": {
-    "iron-component-page": "PolymerElements/iron-component-page#1 - 2",
-    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#1 - 2",
-    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0",
-    "web-component-tester": "^6.0.0"
+    "polymer": "Polymer/polymer#^2.0.0"
   },
   "ignore": [
     "**/.*",
@@ -32,25 +27,5 @@
     "bower_components",
     "test",
     "tasks"
-  ],
-  "version": "2.0.2",
-  "variants": {
-    "1.x": {
-      "dependencies": {
-        "polymer": "Polymer/polymer#^1.9"
-      },
-      "devDependencies": {
-        "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
-        "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^1.0.0",
-        "web-component-tester": "^4.0.0",
-        "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
-      },
-      "resolutions": {
-        "webcomponentsjs": "^0.7"
-      }
-    }
-  },
-  "resolutions": {
-    "webcomponentsjs": "^1.0.0"
-  }
+  ]
 }
