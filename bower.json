@@ -1,6 +1,7 @@
 {
   "name": "markdown-styles",
   "description": "Styles definition for markdown preview.",
+  "version": "2.0.3",
   "license": "Apache-2.0",
   "authors": [
     "The Advanced REST client authors <arc@mulesoft.com>"
@@ -33,7 +34,7 @@
     "test",
     "tasks"
   ],
-  "version": "2.0.2",
+
   "variants": {
     "1.x": {
       "dependencies": {
