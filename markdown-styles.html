@@ -44,7 +44,7 @@ Custom property | Description | Default
   <template>
     <style>
     [slot="markdown-html"] {
-      @apply --arc-font-code1;
+      @apply --arc-font-body1;
     }
 
     [slot="markdown-html"] h1,
@@ -73,14 +73,14 @@ Custom property | Description | Default
 
     [slot="markdown-html"] h1 {
       @apply --arc-font-display1;
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid var(--markdown-styles-title-border-bottom-color, #eee);
       padding-top: 1rem;
       padding-bottom: 0.5rem;
     }
 
     [slot="markdown-html"] h2 {
       @apply --arc-font-title;
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid var(--markdown-styles-title-border-bottom-color, #eee);
     }
 
     [slot="markdown-html"] h3 {
@@ -125,19 +125,19 @@ Custom property | Description | Default
       height: 4px;
       padding: 0;
       margin: 16px 0;
-      background-color: #e7e7e7;
-      border: 0 none
+      background-color: var(--markdown-styles-hr-color, #e7e7e7);
+      border: 0 none;
     }
 
     [slot="markdown-html"] ul,
     [slot="markdown-html"] ol {
-      padding-left: 2em
+      padding-left: 2em;
     }
 
     [slot="markdown-html"] ul.no-list,
     [slot="markdown-html"] ol.no-list {
       padding: 0;
-      list-style-type: none
+      list-style-type: none;
     }
 
     [slot="markdown-html"] ul ul,
@@ -145,15 +145,15 @@ Custom property | Description | Default
     [slot="markdown-html"] ol ol,
     [slot="markdown-html"] ol ul {
       margin-top: 0;
-      margin-bottom: 0
+      margin-bottom: 0;
     }
 
     [slot="markdown-html"] li>p {
-      margin-top: 16px
+      margin-top: 16px;
     }
 
     [slot="markdown-html"] dl {
-      padding: 0
+      padding: 0;
     }
 
     [slot="markdown-html"] dl dt {
@@ -161,7 +161,7 @@ Custom property | Description | Default
       margin-top: 16px;
       font-size: 1em;
       font-style: italic;
-      font-weight: bold
+      font-weight: bold;
     }
 
     [slot="markdown-html"] dl dd {
@@ -171,8 +171,8 @@ Custom property | Description | Default
 
     [slot="markdown-html"] blockquote {
       padding: 0 15px;
-      color: #777;
-      border-left: 4px solid #ddd
+      color: var(--markdown-styles-blockquote-color, #777);
+      border-left: 4px solid var(--markdown-styles-blockquote-border-left-color, #ddd);
     }
 
     [slot="markdown-html"] blockquote>:first-child {
@@ -200,7 +200,7 @@ Custom property | Description | Default
     [slot="markdown-html"] table th,
     [slot="markdown-html"] table td {
       padding: 6px 13px;
-      border: 1px solid #ddd
+      border: 1px solid var(--markdown-styles-table-header-border-color, #ddd);
     }
 
     [slot="markdown-html"] table tr {
@@ -209,13 +209,13 @@ Custom property | Description | Default
     }
 
     [slot="markdown-html"] table tr:nth-child(2n) {
-      background-color: #f8f8f8
+      background-color: var(--markdown-styles-table-row-background-color, #f8f8f8);
     }
 
     [slot="markdown-html"] img {
       max-width: 100%;
       box-sizing: content-box;
-      background-color: #fff
+      background-color: var(--markdown-styles-image-background-color, #fff);
     }
 
     [slot="markdown-html"] img[align=right] {
@@ -233,7 +233,7 @@ Custom property | Description | Default
       padding-top: 0.2em;
       padding-bottom: 0.2em;
       margin: 0;
-      background-color: rgba(0, 0, 0, 0.04);
+      background-color: var(--markdown-styles-code-background-color, rgba(0, 0, 0, 0.04));
       border-radius: 2px
     }
 
@@ -251,7 +251,7 @@ Custom property | Description | Default
       @apply --arc-font-common-code;
       color: black;
       background: var(--code-background-color);
-      text-shadow: 0 1px white;
+      text-shadow: var(--markdown-styles-code-text-shadow, 0 1px white);
       text-align: left;
       word-break: break-all;
       white-space: pre-wrap;
@@ -273,7 +273,7 @@ Custom property | Description | Default
     [slot="markdown-html"] code::-moz-selection,
     [slot="markdown-html"] code ::-moz-selection {
       text-shadow: none;
-      background: #b3d4fc;
+      background: var(--markdown-styles-code-selection-background-color, #b3d4fc);
     }
 
     [slot="markdown-html"] pre::selection,
@@ -281,7 +281,7 @@ Custom property | Description | Default
     [slot="markdown-html"] code::selection,
     [slot="markdown-html"] code ::selection {
       text-shadow: none;
-      background: #b3d4fc;
+      background: var(--markdown-styles-code-selection-background-color, #b3d4fc);
     }
 
     @media print {
@@ -315,7 +315,7 @@ Custom property | Description | Default
     [slot="markdown-html"] .token.prolog,
     [slot="markdown-html"] .token.doctype,
     [slot="markdown-html"] .token.cdata {
-      color: slategray;
+      color: var(--markdown-styles-code-cdata-color, slategray);
     }
 
     [slot="markdown-html"] .token.punctuation {
@@ -357,17 +357,17 @@ Custom property | Description | Default
     [slot="markdown-html"] .token.atrule,
     [slot="markdown-html"] .token.attr-value,
     [slot="markdown-html"] .token.keyword {
-      color: #07a;
+      color: var(--markdown-styles-code-keyword-color, #07a);
     }
 
     [slot="markdown-html"] .token.function {
-      color: #DD4A68;
+      color: var(--markdown-styles-code-function-color, #DD4A68);
     }
 
     [slot="markdown-html"] .token.regex,
     [slot="markdown-html"] .token.important,
     [slot="markdown-html"] .token.variable {
-      color: #e90;
+      color: var(--markdown-styles-variable-color, #e90);
     }
 
     [slot="markdown-html"] .token.important,
