@@ -249,8 +249,8 @@ Custom property | Description | Default
     [slot="markdown-html"] code,
     [slot="markdown-html"] pre {
       @apply --arc-font-common-code;
-      color: black;
-      background: var(--code-background-color);
+      color: var(--code-color, black);
+      background-color: var(--code-background-color);
       text-shadow: var(--markdown-styles-code-text-shadow, 0 1px white);
       text-align: left;
       word-break: break-all;
