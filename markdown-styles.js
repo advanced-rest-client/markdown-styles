@@ -40,9 +40,9 @@ Custom property | Description | Default
 @polymer
 */
 import '../../@polymer/polymer/polymer-element.js';
-const $_documentContainer = document.createElement('template');
+const $documentContainer = document.createElement('template');
 
-$_documentContainer.innerHTML = `<dom-module id="markdown-styles">
+$documentContainer.innerHTML = `<dom-module id="markdown-styles">
   <template>
     <style>
     [slot="markdown-html"] {
@@ -387,4 +387,4 @@ $_documentContainer.innerHTML = `<dom-module id="markdown-styles">
   </template>
 </dom-module>`;
 
-document.head.appendChild($_documentContainer.content);
+document.head.appendChild($documentContainer.content);
