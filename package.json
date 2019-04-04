@@ -18,7 +18,8 @@
     "@polymer/gen-typescript-declarations": "^1.6.1"
   },
   "scripts": {
-    "update-types": "gen-typescript-declarations --deleteExisting --outDir ."
+    "update-types": "gen-typescript-declarations --deleteExisting --outDir .",
+    "test": "exit 0"
   },
   "bugs": {
     "url": "https://github.com/advanced-rest-client/markdown-styles/issues",
