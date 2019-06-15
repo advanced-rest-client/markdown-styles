@@ -95,3 +95,35 @@
 
 
 
+# [3.1.0](https://github.com/advanced-rest-client/markdown-styles/compare/1.0.7...3.1.0) (2019-06-15)
+
+
+### Breaking
+
+* updating to Polymer version 3 ([5bcd2c0e5d7f763e3a1bbf87e26e15081ee26eb6](https://github.com/advanced-rest-client/markdown-styles/commit/5bcd2c0e5d7f763e3a1bbf87e26e15081ee26eb6))
+
+### Docs
+
+* Adding readme file ([c32f9e7c555af19cf9a4c8d916d061cbaaf9623b](https://github.com/advanced-rest-client/markdown-styles/commit/c32f9e7c555af19cf9a4c8d916d061cbaaf9623b))
+* Updating docs ([dd326e196461c37c61b683a73f4e8e804c898263](https://github.com/advanced-rest-client/markdown-styles/commit/dd326e196461c37c61b683a73f4e8e804c898263))
+* Updating readme file ([71400535e70c1b74f815d1c3b81a21295ff5aab8](https://github.com/advanced-rest-client/markdown-styles/commit/71400535e70c1b74f815d1c3b81a21295ff5aab8))
+
+### Fix
+
+* Fixing styles in narrow view ([a9b7b34329748a67d65ac61b62ad4b84994f3c46](https://github.com/advanced-rest-client/markdown-styles/commit/a9b7b34329748a67d65ac61b62ad4b84994f3c46))
+
+### New
+
+* Adding NPM ignore file ([b3c7f50317680ec4f863af5b6eefbd5a1fbc3dd1](https://github.com/advanced-rest-client/markdown-styles/commit/b3c7f50317680ec4f863af5b6eefbd5a1fbc3dd1))
+
+### Update
+
+* Removing unsued files and dependencies ([a4ddfcbbee3fa95afe9e8f4c7cf8fcc953c8f2c1](https://github.com/advanced-rest-client/markdown-styles/commit/a4ddfcbbee3fa95afe9e8f4c7cf8fcc953c8f2c1))
+* Updated Travis configuration to connect to Sauce Labs. ([4de68651bfa8d24d62378cb562c9132ea4d05db8](https://github.com/advanced-rest-client/markdown-styles/commit/4de68651bfa8d24d62378cb562c9132ea4d05db8))
+* Updating CI configuration ([84ed47ebdee32e0ec4960fde360322a99ac64021](https://github.com/advanced-rest-client/markdown-styles/commit/84ed47ebdee32e0ec4960fde360322a99ac64021))
+* Updating import path to match web spec ([39e95f1232ddd9f48f81eabb927c4713ea6fe29e](https://github.com/advanced-rest-client/markdown-styles/commit/39e95f1232ddd9f48f81eabb927c4713ea6fe29e))
+* Updating travis config ([ab13b3fc97f477a29900610da532724dc33b722b](https://github.com/advanced-rest-client/markdown-styles/commit/ab13b3fc97f477a29900610da532724dc33b722b))
+* Updating travis config ([74369a9634f832215b625de1c8d05061a8fa8669](https://github.com/advanced-rest-client/markdown-styles/commit/74369a9634f832215b625de1c8d05061a8fa8669))
+
+
+
