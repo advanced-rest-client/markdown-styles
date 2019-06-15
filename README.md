@@ -58,11 +58,12 @@ class SampleElement extends PolymerElement {
 customElements.define('sample-element', SampleElement);
 ```
 
+Note, the element does not include Polymer library.
+
 ### Installation
 
 ```sh
 git clone https://github.com/advanced-rest-client/markdown-styles
-cd api-url-editor
+markdown-styles
 npm install
-npm install -g polymer-cli
 ```
