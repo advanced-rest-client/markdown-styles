@@ -14,11 +14,7 @@
   "version": "3.0.0",
   "license": "Apache-2.0",
   "author": "The Advanced REST client authors <arc@mulesoft.com>",
-  "devDependencies": {
-    "@polymer/gen-typescript-declarations": "^1.6.1"
-  },
   "scripts": {
-    "update-types": "gen-typescript-declarations --deleteExisting --outDir .",
     "test": "exit 0"
   },
   "bugs": {
@@ -27,6 +23,6 @@
   },
   "main": "markdown-styles.js",
   "dependencies": {
-    "@polymer/polymer": "^3.2.0"
+    "lit-element": "^2.0.1"
   }
 }
