@@ -79,7 +79,7 @@ export default css`[slot="markdown-html"] {
 [slot="markdown-html"] h5 code,
 [slot="markdown-html"] h6 tt,
 [slot="markdown-html"] h6 code {
-  font-size: inherit
+  font-size: inherit;
 }
 
 [slot="markdown-html"] h1 {
@@ -102,19 +102,19 @@ export default css`[slot="markdown-html"] {
 [slot="markdown-html"] h3 {
   font-weight: var(--arc-font-subhead-font-weight, 400);
   font-size: 1.5em;
-  line-height: 1.43
+  line-height: 1.43;
 }
 
 [slot="markdown-html"] h4 {
   font-weight: var(--arc-font-subhead-font-weight, 400);
   line-height: var(--arc-font-subhead-line-height, 24px);
-  font-size: 1.25em
+  font-size: 1.25em;
 }
 
 [slot="markdown-html"] h5 {
   font-weight: var(--arc-font-subhead-font-weight, 400);
   line-height: var(--arc-font-subhead-line-height, 24px);
-  font-size: 1em
+  font-size: 1em;
 }
 
 [slot="markdown-html"] h6 {
@@ -188,7 +188,7 @@ export default css`[slot="markdown-html"] {
 
 [slot="markdown-html"] dl dd {
   padding: 0 16px;
-  margin-bottom: 16px
+  margin-bottom: 16px;
 }
 
 [slot="markdown-html"] blockquote {
@@ -198,11 +198,11 @@ export default css`[slot="markdown-html"] {
 }
 
 [slot="markdown-html"] blockquote>:first-child {
-  margin-top: 0
+  margin-top: 0;
 }
 
 [slot="markdown-html"] blockquote>:last-child {
-  margin-bottom: 0
+  margin-bottom: 0;
 }
 
 [slot="markdown-html"] table {
@@ -219,7 +219,7 @@ export default css`[slot="markdown-html"] {
 }
 
 [slot="markdown-html"] table th {
-  font-weight: bold
+  font-weight: bold;
 }
 
 [slot="markdown-html"] table th,
@@ -230,7 +230,7 @@ export default css`[slot="markdown-html"] {
 
 [slot="markdown-html"] table tr {
   background-color: #fff;
-  border-top: 1px solid #ccc
+  border-top: 1px solid #ccc;
 }
 
 [slot="markdown-html"] table tr:nth-child(2n) {
@@ -244,27 +244,27 @@ export default css`[slot="markdown-html"] {
 }
 
 [slot="markdown-html"] img[align=right] {
-  padding-left: 20px
+  padding-left: 20px;
 }
 
 [slot="markdown-html"] img[align=left] {
-  padding-right: 20px
+  padding-right: 20px;
 }
 
 [slot="markdown-html"] code,
 [slot="markdown-html"] tt {
-  font-family: var(--arc-font-code-family, 'Roboto Mono', 'Consolas', 'Menlo', monospace;);
+  font-family: var(--arc-font-code-family, "Roboto Mono, Consolas, Menlo, monospace");
   -webkit-font-smoothing: var(--arc-font-font-smoothing);
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
   margin: 0;
   background-color: var(--markdown-styles-code-background-color, rgba(0, 0, 0, 0.04));
-  border-radius: 2px
+  border-radius: 2px;
 }
 
 [slot="markdown-html"] pre {
-  word-wrap: normal
+  word-wrap: normal;
 }
 
 /**
@@ -274,7 +274,7 @@ export default css`[slot="markdown-html"] {
 */
 [slot="markdown-html"] code,
 [slot="markdown-html"] pre {
-  font-family: var(--arc-font-code-family, 'Roboto Mono', 'Consolas', 'Menlo', monospace;);
+  font-family: var(--arc-font-code-family, "Roboto Mono, Consolas, Menlo, monospace");
   -webkit-font-smoothing: var(--arc-font-font-smoothing);
   color: var(--code-color, black);
   background-color: var(--code-background-color);
