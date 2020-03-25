@@ -23,6 +23,6 @@
   },
   "main": "markdown-styles.js",
   "dependencies": {
-    "lit-element": "^2.0.1"
+    "lit-element": "^2.3.1"
   }
 }
