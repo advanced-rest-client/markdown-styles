@@ -42,11 +42,6 @@ class MarkdownImpl extends LitElement {
 
 Note use of the `markdown-html` CSS rules. It is required by markdown element also all css rules
 defined here are scoped to a container with this class name.
-
-@customElement
-@group UI Elements
-@memberof UI Elements
-@element markdown-styles
 */
 import { css } from 'lit-element';
 export default css`[slot="markdown-html"] {
