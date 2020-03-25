@@ -121,7 +121,7 @@ export default css`[slot="markdown-html"] {
   font-weight: var(--arc-font-subhead-font-weight, 400);
   line-height: var(--arc-font-subhead-line-height, 24px);
   font-size: 1em;
-  color: #777;
+  color: var(--markdown-styles-h6-color, #777);
 }
 
 [slot="markdown-html"] p,
@@ -229,12 +229,12 @@ export default css`[slot="markdown-html"] {
 }
 
 [slot="markdown-html"] table tr {
-  background-color: #fff;
+  background-color: var(--markdown-styles-table-row-background-color, #fff);
   border-top: 1px solid #ccc;
 }
 
 [slot="markdown-html"] table tr:nth-child(2n) {
-  background-color: var(--markdown-styles-table-row-background-color, #f8f8f8);
+  background-color: var(--markdown-styles-table-even-row-background-color, #f8f8f8);
 }
 
 [slot="markdown-html"] img {
