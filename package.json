@@ -11,7 +11,7 @@
     "url": "git://github.com/advanced-rest-client/markdown-styles.git"
   },
   "name": "@advanced-rest-client/markdown-styles",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "license": "Apache-2.0",
   "author": "The Advanced REST client authors <arc@mulesoft.com>",
   "scripts": {
@@ -23,6 +23,6 @@
   },
   "main": "markdown-styles.js",
   "dependencies": {
-    "lit-element": "^2.0.1"
+    "lit-element": "^2.3.1"
   }
 }

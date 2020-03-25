@@ -42,11 +42,6 @@ class MarkdownImpl extends LitElement {
 
 Note use of the `markdown-html` CSS rules. It is required by markdown element also all css rules
 defined here are scoped to a container with this class name.
-
-@customElement
-@group UI Elements
-@memberof UI Elements
-@element markdown-styles
 */
 import { css } from 'lit-element';
 export default css`[slot="markdown-html"] {
@@ -121,7 +116,7 @@ export default css`[slot="markdown-html"] {
   font-weight: var(--arc-font-subhead-font-weight, 400);
   line-height: var(--arc-font-subhead-line-height, 24px);
   font-size: 1em;
-  color: #777;
+  color: var(--markdown-styles-h6-color, #777);
 }
 
 [slot="markdown-html"] p,
@@ -229,12 +224,12 @@ export default css`[slot="markdown-html"] {
 }
 
 [slot="markdown-html"] table tr {
-  background-color: #fff;
+  background-color: var(--markdown-styles-table-row-background-color, #fff);
   border-top: 1px solid #ccc;
 }
 
 [slot="markdown-html"] table tr:nth-child(2n) {
-  background-color: var(--markdown-styles-table-row-background-color, #f8f8f8);
+  background-color: var(--markdown-styles-table-even-row-background-color, #f8f8f8);
 }
 
 [slot="markdown-html"] img {
