@@ -4,14 +4,11 @@
 
 The styles are applied to the element with `[slot="markdown-html"]` attribute.
 
-### API components
-
-This components is a part of [API components ecosystem](https://elements.advancedrestclient.com/)
-
 ## Usage
 
 ### Installation
-```
+
+```sh
 npm install --save @advanced-rest-client/markdown-styles
 ```
 
@@ -60,10 +57,14 @@ customElements.define('sample-element', SampleElement);
 
 Note, the element does not include Polymer library.
 
-### Installation
+## Development
 
 ```sh
 git clone https://github.com/advanced-rest-client/markdown-styles
-markdown-styles
+cd markdown-styles
 npm install
 ```
+
+## API components
+
+This component is a part of [API components ecosystem](https://elements.advancedrestclient.com/)
