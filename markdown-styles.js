@@ -323,11 +323,12 @@ export default css`[slot="markdown-html"] {
 [slot="markdown-html"] pre,
 pre[slot="markdown-html"] {
   background: var(--code-background-color, #f5f2f0);
+  border: var(--inline-code-border, inherit);
 }
 
 /* Inline code */
 [slot="markdown-html"] :not(pre) > code {
-  padding: .1em;
+  padding: var(--inline-code-padding, .1em);
   border-radius: .3em;
   white-space: normal;
 }
