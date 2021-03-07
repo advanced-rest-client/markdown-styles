@@ -1,8 +1,8 @@
-[![Published on NPM](https://img.shields.io/npm/v/@advanced-rest-client/markdown-styles.svg)](https://www.npmjs.com/package/@advanced-rest-client/markdown-styles)
-
 # Markdown styles set for API components
 
 The styles are applied to the element with `[slot="markdown-html"]` attribute.
+
+[![Published on NPM](https://img.shields.io/npm/v/@advanced-rest-client/markdown-styles.svg)](https://www.npmjs.com/package/@advanced-rest-client/markdown-styles)
 
 ## Usage
 
@@ -20,11 +20,14 @@ import markdownStyles from '@advanced-rest-client/markdown-styles/markdown-style
 
 class MarkdownImpl extends LitElement {
   static get styles() {
-    return css`
-    :host {
-      ...
-    }
-    ${markdownStyles}
+    return [
+      css`
+        :host {
+          ...
+        }`
+      ,
+      markdownStyles
+    ],
   }
 
   render() {
@@ -37,6 +40,8 @@ class MarkdownImpl extends LitElement {
 ```
 
 ### In a Polymer 3 element
+
+Note, Polymer styles are deprecated and will be removed.
 
 ```js
 import {PolymerElement, html} from '@polymer/polymer';
@@ -64,7 +69,3 @@ git clone https://github.com/advanced-rest-client/markdown-styles
 cd markdown-styles
 npm install
 ```
-
-## API components
-
-This component is a part of [API components ecosystem](https://elements.advancedrestclient.com/)
