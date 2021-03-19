@@ -142,11 +142,11 @@ export default css`[slot="markdown-html"] {
   margin-bottom: 16px;
 }
 
-[slot="markdown-html"] p > a {
+[slot="markdown-html"] a {
   color: var(--link-color);
 }
 
-[slot="markdown-html"] p > a:hover {
+[slot="markdown-html"] a:hover {
   color: var(--link-hover-color);
 }
 
