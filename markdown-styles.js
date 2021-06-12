@@ -46,6 +46,7 @@ defined here are scoped to a container with this class name.
 import { css } from 'lit-element';
 export default css`[slot="markdown-html"] {
   -webkit-font-smoothing: var(--arc-font-font-smoothing);
+  font-family: var(--arc-font-body1-font-family);
   font-size: var(--arc-font-body1-font-size, 14px);
   font-weight: var(--arc-font-body1-font-weight, 400);
   line-height: var(--arc-font-body1-line-height, 20px);
@@ -57,9 +58,11 @@ export default css`[slot="markdown-html"] {
 [slot="markdown-html"] h4,
 [slot="markdown-html"] h5,
 [slot="markdown-html"] h6 {
+  font-family: var(--arc-font-title-font-family);
   font-size: var(--arc-font-title-font-size, 20px);
   font-weight: var(--arc-font-title-font-weight, 500);
   line-height: var(--arc-font-title-line-height, 28px);
+  color: var(--arc-font-title-color);
 }
 
 [slot="markdown-html"] h1 tt,
@@ -92,12 +95,17 @@ export default css`[slot="markdown-html"] {
   font-weight: var(--arc-font-title-font-weight, 500);
   line-height: var(--arc-font-title-line-height, 28px);
   border-bottom: 1px solid var(--markdown-styles-title-border-bottom-color, #eee);
+  border-bottom: var(--markdown-styles-h2-border-bottom);
+  border-top: var(--markdown-styles-h2-border-top);
+  padding: var(--arc-font-h2-padding);
+  margin: var(--arc-font-h2-margin);
 }
 
 [slot="markdown-html"] h3 {
   font-weight: var(--arc-font-subhead-font-weight, 400);
-  font-size: 1.5em;
+  font-size: var(--arc-font-subhead-font-size, 1.5em);
   line-height: 1.43;
+  margin: var(--arc-font-h3-margin);
 }
 
 [slot="markdown-html"] h4 {
@@ -132,6 +140,14 @@ export default css`[slot="markdown-html"] {
   line-height: var(--arc-font-body1-line-height, 20px);
   margin-top: 0;
   margin-bottom: 16px;
+}
+
+[slot="markdown-html"] a {
+  color: var(--link-color);
+}
+
+[slot="markdown-html"] a:hover {
+  color: var(--link-hover-color);
 }
 
 [slot="markdown-html"] > *:last-child {
